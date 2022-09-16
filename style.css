@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  background-image: url(./assets/bg.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #121214;
+
+  font-family: 'Inter', sans-serif;
+ 
+
+}
+header{
+  padding-top: 3.2rem;
+  height: calc(12rem + 3.2rem);
+
+}
+
+header div{
+  width: 12rem;
+  margin: auto;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  border-radius: 50%;
+  display: flex;
+  padding: 4px;
+  transition: transform 0.3s;
+
+  animation: fromTop 700ms 200ms backwards;
+
+}
+
+header div:hover{
+  transform: scale(1.1);
+}
+
+header img{
+  width: 100%;
+  border-radius: 50%;
+
+}
+
+main{
+  max-width: 58rem;
+  width: 90%;
+  margin: 3.2rem auto;
+
+  display: grid;
+  gap: 2.4rem;
+
+}
+
+ main section{
+  color: white;
+
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  padding-top: 0.4rem;
+  border-radius: 1rem;
+
+  animation: fromBottom 700ms backwards;
+
+}
+
+main section:nth-child(1){
+  animation-delay: 200ms ;
+}
+main section:nth-child(2){
+  animation-delay: 400ms ;
+
+}
+main section:nth-child(3){
+  animation-delay: 600ms ;
+}
+
+
+section div{
+  background-color: #2A2634;
+  padding: 3.2rem;
+  padding-top: 2.4rem;
+  border-radius: 0.8rem;
+}
+
+section h2 {
+  font-weight: 900;
+  font-size: 2.4rem;
+  letter-spacing: -0.47px;
+
+  line-height: 3.84rem;
+}
+
+section p {
+  font-weight: 400;
+  line-height: 2.56rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.18px;
+  color: #A1A1AA;
+
+}
+
+section ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+
+  list-style: none;
+
+  margin-top: 2.4rem;
+}
+ul li{
+  transition: transform 0.3s;
+}
+
+ul li:hover{
+  transform: scale(1.1);
+}
+
+.games-list img{
+  border-radius: 0.8rem;
+  width: 9rem;
+}
+
+.channel-list img{
+  border-radius: 50%;
+  width: 7rem;
+
+  border: 1px solid #443E54;
+}
+
+
+@keyframes fromTop {
+  from{
+    transform: translateY(-30px);
+    opacity: 0;
+
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fromBottom{
+  from{
+    transform: translateY(30px);
+    opacity: 0;
+
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+
+  }
+}

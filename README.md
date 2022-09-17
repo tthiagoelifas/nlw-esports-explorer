@@ -4,7 +4,7 @@
 
 > Trilha Explorer
 
-Projento construédo no projeto  Next Level Week da Rocketseat.
+Projento construido no projeto  Next Level Week da Rocketseat.
 
 [Clique aqui para acessar](https://tthiagoelifas.github.io/nlw-esports-explorer/)
 
